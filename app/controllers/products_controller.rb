@@ -4,10 +4,18 @@ class ProductsController < ApplicationController
     render json: content
   end
 
-  def display_product
-    render :json (message: "Which product would you like to see today? (Enter a Product ID Number)")
-    product = gets.chomp.to_i
-    content = Product.find_by(id:product)
+  def display_product1
+    content = Product.first
+    render json: content
+  end
+
+  def display_product2
+    content = Product.second
+    render json: content
+  end
+
+  def display_product3
+    content = Product.last
     render json: content
   end
 end
