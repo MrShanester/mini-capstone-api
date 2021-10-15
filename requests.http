@@ -5,3 +5,26 @@ Content-Type: application/json
 
 GET http://localhost:3000/products/2.json
 Content-Type: application/json
+
+###
+
+POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  "name": "A Fig", "price": 0, "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/figs-2056729.jpg?webp=true&quality=90&resize=408%2C370", "description": "Sweet and Wonderous"
+}
+
+###
+
+DELETE http://localhost:3000/products/.json
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3000/products/5.json
+Content-Type: application/json
+
+{
+  "name": "Two Figs"
+}
