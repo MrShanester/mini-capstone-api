@@ -17,7 +17,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/products/.json
+DELETE http://localhost:3000/products/6.json
 Content-Type: application/json
 
 ###
@@ -26,5 +26,5 @@ PATCH http://localhost:3000/products/5.json
 Content-Type: application/json
 
 {
-  "name": "Two Figs"
+  "price": 2
 }

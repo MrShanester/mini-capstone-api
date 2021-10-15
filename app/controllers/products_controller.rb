@@ -20,6 +20,7 @@ class ProductsController < ApplicationController
     input = params["id"].to_i
     product = Product.find_by id: input
     product.destroy
+    render json: {message: "Product Annihilated"}
   end
 
   def update
