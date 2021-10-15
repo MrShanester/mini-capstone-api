@@ -1,18 +1,12 @@
 class ProductsController < ApplicationController
-  def display_all
+  def index
     content = Product.all
-    render json: content
+    render json: content.as_json
   end
 
-  def url_display
-    input = params["wildcard"].to_i
-    output = Product.find_by id: input
-    render json: output.to_json
-  end
-
-  def display 
+  def show
     input = params["id"].to_i
     output = Product.find_by id: input
-    render json: output.to_json
+    render json: output.as_json
   end
 end
