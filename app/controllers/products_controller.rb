@@ -1,19 +1,19 @@
 class ProductsController < ApplicationController
   def index
-    content = Product.all
-    render json: content.as_json
+    output = Product.all
+    render json: output
   end
 
   def show
     input = params["id"].to_i
     output = Product.find_by id: input
-    render json: output.as_json(methods: [:is_discounted?, :tax, :total])
+    render json: output
   end
 
   def create
     product = Product.new(name: params["name"], price: params["price"], image_url: params["image_url"], description: params["description"])
     product.save
-    render json: product.as_json
+    render json: product
   end
 
   def destroy
@@ -31,6 +31,6 @@ class ProductsController < ApplicationController
     product.image_url = params["image_url"] || product.image_url
     product.description = params["description"] || product.description
     product.save
-    render json: product.as_json
+    render json: product
   end
 end
