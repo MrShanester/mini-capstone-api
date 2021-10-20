@@ -16,7 +16,7 @@ class ProductsController < ApplicationController
     if product.save
       render json: product
     else 
-      render json: {error: product.errors.full_messages}
+      render json: {error: product.errors.full_messages}, status: 406
     end
   end
 
@@ -37,7 +37,7 @@ class ProductsController < ApplicationController
     if product.save
       render json: product
     else 
-      render json: {error: product.errors.full_messages}
+      render json: {error: product.errors.full_messages}, status: 406
     end
   end
 end
