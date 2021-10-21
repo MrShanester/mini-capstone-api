@@ -22,4 +22,9 @@ class Product < ApplicationRecord
     friend = created_at.strftime("%A, %d %b %Y %l:%M %p")
     return friend
   end
+
+  def supplier
+    supplier = Supplier.find_by id: supplier_id
+    return supplier.name
+  end
 end
