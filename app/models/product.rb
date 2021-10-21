@@ -24,7 +24,6 @@ class Product < ApplicationRecord
   end
 
   def supplier
-    supplier = Supplier.find_by id: supplier_id
-    return supplier.name
+    Supplier.find_by id: supplier_id
   end
 end
