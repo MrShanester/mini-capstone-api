@@ -1,6 +1,6 @@
 GET http://localhost:3000/products.json
 Content-Type: application/json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTQzMzh9.Jxpy3FoxRJJnob2xUtMu2_h7uhQalAPWlfMXhuo4F-w
 ###
 
 GET http://localhost:3000/products/2.json
@@ -50,3 +50,5 @@ Content-Type: application/json
   "email": "Shane@test.com",
   "password": "admin1234"
 }
+
+# change url to image_url
