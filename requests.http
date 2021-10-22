@@ -28,3 +28,16 @@ Content-Type: application/json
 {
   "price": 2
 }
+
+###
+
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Shane",
+  "email": "Shane@test.com",
+  "password": "admin1234",
+  "password_confirmation": "admin1234"
+}
