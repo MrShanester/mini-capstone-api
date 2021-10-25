@@ -1,6 +1,6 @@
 GET http://localhost:3000/products.json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTQzMzh9.Jxpy3FoxRJJnob2xUtMu2_h7uhQalAPWlfMXhuo4F-w
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjg2MzZ9.stdFaGFZ9QQxRT_MH8Yb-iM4aWGnaKlPYTUn7I8Mf_w
 ###
 
 GET http://localhost:3000/products/2.json
@@ -36,10 +36,10 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Shane",
-  "email": "Shane@test.com",
-  "password": "admin1234",
-  "password_confirmation": "admin1234"
+  "name": "Tanner",
+  "email": "Tanner@test.com",
+  "password": "tanner",
+  "password_confirmation": "tanner"
 }
 
 ### Sessions create (login)
@@ -53,16 +53,13 @@ Content-Type: application/json
 
 ### order create
 
-POST http://localhost:3000/orders
+POST http://localhost:3000/orders.json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjg2MzZ9.stdFaGFZ9QQxRT_MH8Yb-iM4aWGnaKlPYTUn7I8Mf_w
 
 {
-  "user_id": 1,
-  "product_id": 1,
-  "quantity": 3,
-  "subtotal": 24000,
-  "tax": 3,
-  "total": 24003
+  "product_id": 15,
+  "quantity": 3
 }
 
 # change url to image_url
