@@ -51,4 +51,18 @@ Content-Type: application/json
   "password": "admin1234"
 }
 
+### order create
+
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "product_id": 1,
+  "quantity": 3,
+  "subtotal": 24000,
+  "tax": 3,
+  "total": 24003
+}
+
 # change url to image_url
