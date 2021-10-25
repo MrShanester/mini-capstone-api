@@ -58,8 +58,14 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjg2MzZ9.stdFaGFZ9QQxRT_MH8Yb-iM4aWGnaKlPYTUn7I8Mf_w
 
 {
-  "product_id": 15,
-  "quantity": 3
+  "product_id": 10,
+  "quantity": 12
 }
 
 # change url to image_url
+
+### get request
+
+GET http://localhost:3000/orders/2.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjg2MzZ9.stdFaGFZ9QQxRT_MH8Yb-iM4aWGnaKlPYTUn7I8Mf_w
