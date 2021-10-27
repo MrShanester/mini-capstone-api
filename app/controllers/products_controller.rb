@@ -1,12 +1,14 @@
 class ProductsController < ApplicationController
+  before_action :authenticate_user
+
 
   def index
-    output = Product.all
-    if current_user
-      render json: output
-    else
-      render json: {message: "User not logged in."}
+    product = Product.all
+    if params[:category]
+      cat = Category.find_by(name: params[:category])
+      product = cat.products
     end
+    render json: product
   end
 
   def show

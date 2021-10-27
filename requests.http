@@ -1,6 +1,6 @@
-GET http://localhost:3000/products.json
+GET http://localhost:3000/products.json?category=Shanes_Reserve
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUzNjEwMjF9.Fq9QmsRV6kHcfjgMmGFuLOe3wGEk7iThw8-dHn28Psg
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU0NDI5Mzh9.dim2-ck0uuKVjdrhMk6d__T-h05UYwX3H_kioMZd6Rc
 
 ###
 
