@@ -70,3 +70,24 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjg2M
 GET http://localhost:3000/orders/2.json
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjg2MzZ9.stdFaGFZ9QQxRT_MH8Yb-iM4aWGnaKlPYTUn7I8Mf_w
+
+### CARTED_PRODUCTS REQUESTS
+
+POST http://localhost:3000/carted_products.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU1Mjg2Njd9.0M4JTJqKcxvObWZgsjCVzxOTp3u8dNdhibf1lngBf_4
+
+{
+  "product_id": 7,
+  "quantity": 2
+}
+
+### CARTED INDEX (SHOW)
+GET http://localhost:3000/carted_products.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU1Mjg2Njd9.0M4JTJqKcxvObWZgsjCVzxOTp3u8dNdhibf1lngBf_4
+
+### DESTROY
+DELETE http://localhost:3000/carted_products/3.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU1Mjg2Njd9.0M4JTJqKcxvObWZgsjCVzxOTp3u8dNdhibf1lngBf_4
